@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dp webpack</title>
+  </head>
+  <body>
+    ${require("./inc/navbar.html")} ${require("./inc/slider.html")}
+    <div class="container about">
+      <h1 class="text-center mb-5">За нас</h1>
+      <div class="mw-800px m-auto">
+        <p class="text-center">
+          ВETTY е маркетиншки концепт − програма за лојалност на крајните
+          потрошувачи. Програмата обезбедува алатки за маркетинг кои и помагаат
+          на аптеката да го подигне нивото на своите услуги и да создаде свои
+          лојални клиенти.
+        </p>
+        <p class="text-center">
+          Маркетинг концептот BETTY обединува голем број аптеки низ целата
+          земја. Таа е напредна програма за соработка базирана на искуствата на
+          локалните традиции и најсовремените трендови во развојот на
+          аптекарската практика во Европа. Општата цел кон која се стремиме е
+          аптека целосно ориентирана кон клиентот и неговите потреби.
+        </p>
+        <p class="text-center">
+          BETTY се развива во 4 земји од Балканската група на Феникс Фарма −
+          Бугарија, Србија, Македонија, Босна и Херцеговина.
+        </p>
+      </div>
+    </div>
+    <div class="with-beige-bg__side">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="img-responsive" src="/static/spisanie.png" alt="" />
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h1 class="text-info mb-3 ml-negative">Betty Списание</h1>
+            <h2>СВЕТЛАНА БОЈКОВИЌ</h2>
+            <h6 class="mb-5">Ноември 2019</h6>
+            <p>
+              Кариерата ја градела со врвни улоги, пред сè, во театар, но и во
+              серии и филмови. Многу нејзини реплики од претставите Мадам
+              Сан-Жен, Три сестри, Марија Стујарт, филмовите Кучето кое ги
+              сакаше возовите, Зона Замфирова, и сериите Подобар живот, Семејно
+              богатство се цитираат и денес.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5 mt-5 pt-5 pb-5">
+      <div class="row">
+        <div
+          class="col-md-6 d-flex flex-column justify-content-center align-items-start"
+        >
+          <h3 class="text-info ml-negative mb-5">Препорака на денот</h3>
+          <h1 class="big text-dark">Livsane</h1>
+          <p>
+            Витамин Ц придонесува за нормална функција на имуниот систем и за
+            намалување на замор и исцрпеност.
+          </p>
+          <a href="#" class="btn btn-rounder btn-info mt-5">
+            Дознај повеќе
+          </a>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive" src="/static/livsane2.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid small-card_container">
+      <div class="container">
+        <div class="small-card_wrapper">
+          <div class="small-card small-card__diet">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="img img-rounded img-invert mw-100px">
+                  <img src="/static/icons/division.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="col-md-8 d-flex flex-column justify-content-between h-100"
+              >
+                <h3 class="text-white text-transform-uppercase">
+                  ДИЕТАЛЕН КАЛКУЛАТОР
+                </h3>
+                <p class="text-white">
+                  Со помош на долниот калкулатор можете на брз и едноставен
+                  начин да ги испланирате вашите дневни оброци
+                </p>
+                <a href="#" class="text-white">Дознај повеќе >></a>
+              </div>
+            </div>
+          </div>
+          <div class="small-card  small-card__horoscope">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="img img-rounded img-invert mw-100px">
+                  <img src="/static/icons/aquarius_border.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="col-md-8 d-flex flex-column justify-content-between h-100"
+              >
+                <h3 class="text-white text-transform-uppercase">
+                  МЕСЕЧЕН ХОРОСКОП
+                </h3>
+                <p class="text-white">
+                  Со помош на долниот калкулатор можете на брз и едноставен
+                  начин да ги испланирате вашите дневни оброци
+                </p>
+                <a href="#" class="text-white">Дознај повеќе >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-hills">
+      <div class="container">
+        <div class="row">
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+        </div>
+      </div>
+    </div>
+    ${require("./inc/footer.html")}
+  </body>
+</html>

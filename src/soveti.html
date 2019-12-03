@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dp webpack</title>
+  </head>
+  <body>
+    ${require("./inc/navbar.html")} ${require("./inc/jumbo.html")}
+    <div class="container pb-5 pt-5">
+      <div class="soveti_header mb-5">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-1 p-4 bg-primary">
+            <img
+              class="img-responsive filter-invert"
+              src="/static/icons/dumbbell.svg"
+            />
+          </div>
+          <div class="col-md-10 offset-md-1 border-bottom border-color-primary">
+            <h4 class="text-primary">ЗДРАВЈЕ</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+      </div>
+    </div>
+    <div class="container pb-5 pt-5">
+      <div class="soveti_header mb-5">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-1 p-4 bg-success">
+            <img
+              class="img-responsive filter-invert"
+              src="/static/icons/dumbbell.svg"
+            />
+          </div>
+          <div class="col-md-10 offset-md-1 border-bottom border-color-success">
+            <h4 class="text-success">ВЕЖБИ</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+      </div>
+    </div>
+    <div class="container pb-5 pt-5">
+      <div class="soveti_header mb-5">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-1 p-4 bg-info">
+            <img
+              class="img-responsive filter-invert"
+              src="/static/icons/dumbbell.svg"
+            />
+          </div>
+          <div class="col-md-10 offset-md-1 border-bottom border-color-info">
+            <h4 class="text-info">ИСХРАНА</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+        ${require("./inc/content_card.html")}
+      </div>
+    </div>
+    ${require("./inc/footer.html")}
+  </body>
+</html>

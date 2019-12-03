@@ -1,0 +1,345 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.full-height {
+  height: 100vh;
+}
+
+.leaves {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  will-change: top;
+  pointer-events: none;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+  }
+}
+
+.bg {
+  &-beige {
+    background: $beige;
+  }
+  &-hills {
+    padding: 5rem 0;
+    background: linear-gradient(to top, rgba(white, 1) 30%, rgba(white, 0) 30%),
+      url("/static/betty\ home.jpg");
+    background-size: cover;
+  }
+  &-lightgreen {
+    background: $lightgreen !important;
+    .slider-item__bg img {
+      opacity: 0.9;
+    }
+  }
+}
+
+.btn {
+  padding: 1rem 2rem;
+  &-rounder {
+    border-radius: 100rem;
+  }
+  &-white {
+    background: white;
+    color: $success;
+    transition: transition(background), transition(color),
+      transition(box-shadow);
+    &:hover {
+      color: white;
+      background: $success;
+      box-shadow: 0 10px 40px -20px $success;
+    }
+  }
+}
+
+.card {
+  &-content {
+    background: white;
+    box-shadow: 0 20px 20px -20px rgba(black, 0.1);
+    transition: transition(box-shadow), transition(transform);
+    border-radius: 5px;
+    overflow: hidden;
+    &:hover {
+      box-shadow: 0 30px 60px -20px rgba(black, 0.1);
+      transform: translate(0, -5px);
+    }
+    border: 0;
+    padding: 0rem;
+    &_body {
+      padding: 1rem;
+      a {
+        color: $dark;
+        text-transform: uppercase;
+        font-size: 19px !important;
+        font-weight: 800;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    &_footer {
+      padding: 0 0 3rem 0;
+    }
+    &_image {
+      img {
+        max-height: 160px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+  &-link {
+    background: $lightgreen;
+    max-height: 400px;
+    max-width: 400px;
+    @include break-lg {
+      margin: 0 auto !important;
+    }
+    padding: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    transition: transition(box-shadow), transition(transform);
+    &:hover {
+      box-shadow: 0 20px 60px -20px $lightgreen;
+      transform: translate(0, -5px);
+    }
+    img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+    }
+    .image {
+      padding: 1rem;
+      border-radius: 100%;
+      background: $olive;
+    }
+    h1,
+    p {
+      opacity: 0.8;
+    }
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+    &-content {
+      width: 60%;
+      p {
+        font-size: 1rem;
+      }
+    }
+    &-foot {
+      width: 100%;
+      text-align: right;
+      a {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.with {
+  &-beige-bg {
+    &__full {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        background: url("/static/beige-full.png");
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    &__side {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        background: url("/static/bg-grey_sides.png");
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        background-position: 0% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &-white-bg {
+    &__bottom {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        background: url("/static/pozadina-bottom.png");
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        background-position: 0% 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    &__top {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        background: url("/static/pozadina-top.png");
+        z-index: 0;
+        top: 0;
+        left: 0;
+        background-position: 0% 0%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.img-responsive {
+  width: 100% !important;
+  height: auto;
+}
+
+.ml-negative {
+  margin-left: -1rem;
+}
+
+.img {
+  img {
+    width: 100%;
+  }
+  &-rounded {
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 100rem;
+  }
+  &-invert {
+    filter: invert(1);
+  }
+  &-small {
+    img {
+      max-width: 50px;
+      height: auto;
+    }
+  }
+}
+
+.small-card {
+  height: 100%;
+  padding: 5rem 2rem;
+  background-size: cover;
+
+  &_container {
+    background: $darkgreen;
+  }
+  &_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+  }
+  &__diet {
+    background: linear-gradient(
+        to left,
+        rgba($darkgreen, 0.5),
+        rgba($darkgreen, 1)
+      ),
+      url("/static/dietalen\ kalkulator.jpg");
+  }
+  &__horoscope {
+    background-image: linear-gradient(
+        to right,
+        rgba($darkgreen, 0.5),
+        rgba($darkgreen, 1)
+      ),
+      url("/static/horoskop.jpg");
+  }
+}
+
+.social-icon {
+  width: 25px;
+  height: auto;
+}
+
+.search {
+  &-button {
+    position: relative;
+  }
+  &-form {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    padding: 1rem;
+    background: $info;
+    width: 80vw;
+    max-width: 400px;
+    input,
+    .form-group {
+      margin: 0;
+    }
+  }
+}
+
+.product {
+  margin: 2rem 0;
+  &-image {
+    padding: 2rem;
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px -20px rgba(black, 0.05);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+}
+
+#gmap_canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.filter-invert {
+  filter: invert(1);
+}

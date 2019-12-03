@@ -1,0 +1,62 @@
+<form action="/" id="bmrCalc">
+  <div class="form-group">
+    <div class="row">
+      <div class="col-md-6">
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            id="genderMale"
+            autocomplete="off"
+            checked
+            class="mr-2"
+            value="male"
+          />
+          Машки
+        </label>
+      </div>
+      <div class="col-md-6">
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            id="genderFemale"
+            autocomplete="off"
+            class="mr-2"
+            value="female"
+          />
+          Женски
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <select required class="form-control btn-rounder" name="height" id="height">
+      <option value="">Висина (во цм)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <select required class="form-control btn-rounder" name="weight" id="weight">
+      <option value="">Тежина (во кг)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <select required class="form-control btn-rounder" name="age" id="age">
+      <option value="">Старост (во години)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-info btn-rounder">
+      ПРЕСМЕТАЈ
+    </button>
+  </div>
+</form>
+<h5 class="text-uppercase mt-5">
+  Вашите дневни енергетски потреби ( БМР ) се:
+</h5>
+<div
+  class="bg-white p-4 btn-rounder d-flex align-items-center justify-content-between"
+>
+  <span id="kcalOutput"></span>
+  <span class="font-weight-bold">kcal</span>
+</div>

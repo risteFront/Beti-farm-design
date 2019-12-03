@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dp webpack</title>
+  </head>
+  <body>
+    ${require("./inc/navbar.html")} ${require("./inc/jumbo.html")}
+    <div class="container-fluid bg-beige pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 bg-primary text-white p-5">
+            <div class="row">
+              <div class="col-md-2">
+                <img
+                  src="/static/icons/division.svg"
+                  class="filter-invert img-responsive"
+                />
+              </div>
+              <div class="col-md-10">
+                <h4 class="mb-3">ИЕТАЛЕН КАЛКУЛАТОР</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
+                  voluptate quisquam alias natus, iste voluptatibus? Qui, quam!
+                  Mollitia iure voluptas ex iste, amet tempore beatae ratione,
+                  nulla fuga accusantium tenetur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 offset-md-2 bg-primary text-white p-5">
+            <div class="row">
+              <div class="col-md-2">
+                <img
+                  src="/static/icons/aquarius_border.svg"
+                  class="filter-invert img-responsive"
+                />
+              </div>
+              <div class="col-md-10">
+                <h4 class="mb-3">ИЕТАЛЕН КАЛКУЛАТОР</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  nisi nostrum nihil quos, rem aliquam. Illum at voluptatibus
+                  sit, unde incidunt, molestias veniam amet recusandae, soluta
+                  nulla voluptate reiciendis explicabo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-beige pt-5 pb-5">
+      <div class="container">
+        <h1 class="text-primary">
+          Формулар за пресметка на дневните енергетски потреби:
+        </h1>
+        <div class="row">
+          <div class="col-md-7">
+            ${require("./inc/bmrcalc.html")}
+          </div>
+          <div class="col-md-5">
+            <img src="/static/doctor.png" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5 pb-5">
+      <h1 class="text-primary">Важно:</h1>
+      <p>
+        Ова се вкупните калории кои му се потребни на вашето тело за да преживее
+        при потполно мирување (како автомобил во лер, користи некоја количина на
+        гориво за да работи, но не мрда).
+      </p>
+      <p>
+        Бидејќи ние се надеваме дека вие сте малку поактивни, сакаме да ви
+        дадеме алатка со која можете да пресметате колку калории ви се потребни
+        дневно ако работите, вежбате, играте со деца и слично. Тој податок се
+        нарекува TDEE односно вкупна дневна потрошувачка на енергија.
+      </p>
+    </div>
+    <div class="container-fluid bg-hills">
+      <div class="container">
+        <div class="row">
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+        </div>
+      </div>
+    </div>
+    ${require("./inc/footer.html")}
+  </body>
+</html>

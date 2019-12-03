@@ -1,0 +1,56 @@
+.navbar {
+  padding: 0.5rem 5vw;
+  background: rgba(white, 0.9);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  &-nav {
+    img {
+      max-height: 25px;
+      width: 25px;
+      object-fit: contain;
+    }
+  }
+  &-tagline {
+    span {
+      font-size: 12px;
+      display: block;
+      flex: 1 1 30%;
+      word-wrap: break-word;
+      max-width: 300px;
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+  &-brand {
+    img {
+      max-height: 75px;
+      flex: 1 1 40%;
+      object-fit: contain;
+    }
+  }
+}
+
+.nav {
+  &-link {
+    transition: transition(color);
+    font-size: 14px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  &-item {
+    &:hover {
+      .nav-link {
+        color: $green !important;
+      }
+    }
+    &.active {
+      font-weight: 600;
+      .nav-link {
+        color: $green !important;
+      }
+    }
+  }
+}

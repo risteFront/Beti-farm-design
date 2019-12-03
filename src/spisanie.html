@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dp webpack</title>
+  </head>
+  <body>
+    ${require("./inc/navbar.html")} ${require("./inc/jumbo.html")}
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-success">
+            Архива
+          </h1>
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            placeholder="Пребарувај по месеци"
+            class="form-control border-grey border btn-rounder form-search"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-beige pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+          <div class="col-md-3">
+            <img src="/static/spisanie.png" class="img-responsive" />
+            <h6>СВЕТЛАНА БОЈКОВИЌ</h6>
+            <small class="opacity-50">Ноември 2019</small>
+            <a href="#" class="d-block text-success">Дознај повеќе >></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid small-card_container">
+      <div class="container">
+        <div class="small-card_wrapper">
+          <div class="small-card small-card__diet">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="img img-rounded img-invert mw-100px">
+                  <img src="/static/icons/division.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="col-md-8 d-flex flex-column justify-content-between h-100"
+              >
+                <h3 class="text-white text-transform-uppercase">
+                  ДИЕТАЛЕН КАЛКУЛАТОР
+                </h3>
+                <p class="text-white">
+                  Со помош на долниот калкулатор можете на брз и едноставен
+                  начин да ги испланирате вашите дневни оброци
+                </p>
+                <a href="#" class="text-white">Дознај повеќе >></a>
+              </div>
+            </div>
+          </div>
+          <div class="small-card  small-card__horoscope">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="img img-rounded img-invert mw-100px">
+                  <img src="/static/icons/aquarius_border.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="col-md-8 d-flex flex-column justify-content-between h-100"
+              >
+                <h3 class="text-white text-transform-uppercase">
+                  МЕСЕЧЕН ХОРОСКОП
+                </h3>
+                <p class="text-white">
+                  Со помош на долниот калкулатор можете на брз и едноставен
+                  начин да ги испланирате вашите дневни оброци
+                </p>
+                <a href="#" class="text-white">Дознај повеќе >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-hills">
+      <div class="container">
+        <div class="row">
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+          ${require('./inc/content_card.html')}
+        </div>
+      </div>
+    </div>
+    ${require("./inc/footer.html")}
+  </body>
+</html>

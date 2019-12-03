@@ -1,0 +1,79 @@
+$blue: #133880;
+$green: #54b247;
+$cyan: #8bac20;
+$yellow: #c6c25f;
+$red: #c65f5f;
+$lightgreen: #e2ffaf;
+$olive: #c5e55f;
+$darkgreen: #439e55;
+$beige: #f6f5f1;
+
+$primary: $blue !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@function transition($base) {
+  $result: 0.2s ease-in-out $base;
+  @return $result;
+}
+
+@mixin break-xs {
+  @media screen and (max-width: map-get($grid-breakpoints, "xs")) {
+    @content;
+  }
+}
+@mixin break-md {
+  @media screen and (max-width: map-get($grid-breakpoints, "md")) {
+    @content;
+  }
+}
+@mixin break-lg {
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@for $i from 1 through 12 {
+  .grid-col-#{$i} {
+    grid-template-columns: repeat(#{$i}, 1fr);
+    @include break-lg {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .mw-#{$i*100}px {
+    max-width: #{$i * 100 + "px"};
+  }
+}
+
+.d-grid {
+  display: grid;
+  @for $i from 1 through 10 {
+    &.gap-#{$i} {
+      grid-gap: #{$i / 2}rem;
+    }
+  }
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+@for $i from 0 through 11 {
+  &.opacity-#{$i * 10} {
+    opacity: #{$i / 10};
+  }
+}

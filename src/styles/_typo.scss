@@ -1,0 +1,29 @@
+p {
+  line-height: 200%;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 3rem;
+  &.big {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 1rem 2rem !important;
+  border: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.form-group {
+  .btn {
+    width: 100%;
+  }
+}
