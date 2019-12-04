@@ -23,7 +23,9 @@ function bmrCalc() {
   const $age = $(`#age`);
   const $gender = $(`#gender`);
   const values = [Array(160).fill(), Array(200).fill(), Array(99).fill()];
-  console.log($height, $weight, $age);
+  // remove console.log
+  //console.log($height, $weight, $age);
+  
   values.forEach((entry, i) => {
     console.log(entry);
     switch (i) {

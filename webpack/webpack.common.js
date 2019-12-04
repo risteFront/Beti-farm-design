@@ -61,6 +61,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "spisanie.html",
       template: Path.resolve(__dirname, "../src/spisanie.html")
+    }),
+    new HtmlWebpackPlugin({
+      filename: "kategorija.html",
+      template: Path.resolve(__dirname, "../src/kategorija.html")
     })
   ],
   resolve: {

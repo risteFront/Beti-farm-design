@@ -20,7 +20,114 @@ body {
     object-position: center center;
   }
 }
+.container-image{
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+    word-wrap: break-word;
+    width: 450px;
+    font-size: 2.5rem;
+    z-index: 2;
+    color: #fff;
+    .font-image-info{
+      font-weight: 700;
+    }
+    input{
+      margin-top: 2rem;
+      width: 30rem;
+      padding: 0 20px;
+      background-color: #86af49;
+      opacity: 0.8;
+      caret-color:#ffff;
+      border-radius: 1rem;
+      border-width: 0px;
+      padding: 10px;
+      font-size: 1rem;
+      &:focus{
+        color:white !important;
+        z-index: 3;
+        outline-width: 0;
+      }
+      &::-webkit-input-placeholder{
+        color: white;
+      }
+      &::placeholder {
+        color: white;
+      }
+    }
+    .arrowInput{
+    position: relative;
+    top: -35px;
+    width: 28px;
+    float: right;
+    cursor: pointer;
+    }
+}
+@mixin icon-infos {
 
+  float: left !important;
+  box-shadow: 5px 5px 3px #888888;
+  border-radius: 50%;
+  margin:0px;
+  background-color: #dd4dc5;
+  filter: invert(100%);
+}
+.kit-medicine{
+  width: 40px !important;
+  padding: 10px;
+  height: 40px;
+@include icon-infos();
+}
+.helthy{
+  line-height: 45px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.mail-box{
+  width: 70px !important;
+  height: 70px;
+  margin:none;
+  position: absolute;
+    bottom: 10px;
+  @include icon-infos();
+}
+.container-cards{
+  width: 70%;
+  margin:auto;
+  & img{
+   width: 20px;
+   color: #ccc;
+   float:right; 
+   margin:auto;
+   margin-left: 30px;
+   cursor: pointer;
+  }
+  .inline-cards{
+    display: inline-flex;
+  }
+  .hr-line{
+    height: 0.7px;
+    margin-top: 30px;
+    background: #ccc;
+  }
+  .text-info{
+    font-size:0.7rem;
+    font-weight: 400;
+    color:#000000 !important;
+  }
+  div h4{
+    color: #ccc;
+  }
+  div h5{
+    font-size: 15px;
+    color: #54b247;
+    margin-top:30px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+
+}
 .bg {
   &-beige {
     background: $beige;
