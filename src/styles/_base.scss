@@ -20,15 +20,18 @@ body {
     object-position: center center;
   }
 }
+@mixin imageCntainer {
+  position: absolute;
+  word-wrap: break-word;
+  font-size: 2.5rem;
+  z-index: 2;
+  color: #fff;
+}
 .container-image{
-    position: absolute;
+  @include imageCntainer();
     bottom: 50%;
     left: 15%;
-    word-wrap: break-word;
     width: 450px;
-    font-size: 2.5rem;
-    z-index: 2;
-    color: #fff;
     .font-image-info{
       font-weight: 700;
     }
@@ -127,6 +130,28 @@ body {
   }
   
 
+}
+.image-imployment{
+  max-width: 800px;
+  left:17%;
+  top:20%;
+  font-weight: 800;
+  @include imageCntainer();
+  & a{
+    margin-top: 30px;
+    background-color:#86af49 !important;
+    height: 30px;
+    line-height: 5px;
+    font-size: 13px;
+   // color:#86af49
+  }
+}
+.dummy-text{
+  font-size: 13px;
+}
+.application{
+  font-size: 8px;
+  padding: 9px !important;
 }
 .bg {
   &-beige {
@@ -395,6 +420,8 @@ body {
 .social-icon {
   width: 25px;
   height: auto;
+  background-color: #dd4dc5;
+  filter: invert(100%);
 }
 
 .search {
