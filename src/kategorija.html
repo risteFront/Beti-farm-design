@@ -9,136 +9,140 @@
 
 <body>
     ${require("./inc/navbar.html")}
-    <div class="container-category">
-        <div class="with-white-bg__bottom">
-            <div class="container-image">
-                <span class="font-image-info">СОВЕТИ ЗА ВАШЕТО ЗДРАВЈЕ</span>
-                <div>
-                    <input type="text" placeholder="ИЗБЕРЕТЕ КАТЕГОРИЈА" spellcheck="false">
-                    <img class="arrowInput" src="../static/icons/right-arrow-copy.svg">
-                </div>
-            </div>
-            <img class="img-responsive" src="../static/meditation-cover.png" />
-        </div>
-        <div class="container-cards">
-            <div class="row">
-                <div class="col-md-3 col-lg-3">
-                    <img class="kit-medicine" src="../static/icons/kit.svg">
-                    <span class="helthy">ЗДРАВЈЕ</span>
-                </div>
-                <div class="col-md-3 offset-md-6 col-lg-3 offset-lg-6">
-                    <img class="mail-box" src="../static/icons/mail.svg">
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                ${require('./inc/card_content_category.html')}
-                ${require('./inc/card_content_category.html')}
-                ${require('./inc/card_content_category.html')}
-            </div>
-            <div class="row ">
-                <div class="col-lg-9 col-md-9">
-                    <br>
-                    <div>
-                        <hr class="hr-line">
-                        <h4 class="text-success" style="margin-top: 3rem;">ПСОРИЈАЗА</h4>
-                        <p class="text-info inline-cards">Иако гингивитисот, или воспаление на непцата, не претставува
-                            голем проблем
-                            на почеток, ова пореметување, ако не се лекува на време, може да доведе до сериозни
-                            здравствени
-                            потешкотии
-                            <img class="right-arrow-paragraph" src="/static/icons/right-arrow-bold.svg" />
-                        </p>
-                        <p class="text-success" style="font-size: 0.8rem; font-weight: 300; ">
-                            Категорија Здравје <span class="text-dark" style=" font-weight: 300; ">19.11.2019</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <h4>КАТЕГОРИИ</h4>
-                    <h5>ЗДРАВЈЕ</h5>
-                    <h5>ИСХРАНА</h5>
-                    <h5>НЕГА И УБАВИНА</h5>
-                    <h5>МОДА</h5>
-                    <h5>СПОРТ</h5>
-                    <h5>ОСТАНОТО</h5>
-                </div>
-                <div class="col-lg-9 col-md-9 inline-cards">
-                    <div>
-                        <hr class="hr-line">
-                        <h4 class="text-success" style="margin-top: 3rem;">МАНИ ВО ВИДОТ </h4>
-                        <p class="text-info inline-cards">
-                            Секојдневно сме сведоци како различно реагираме на она што го гледаме -- смеење до солзи и
-                            очите се оглседало на душата, се изрази кои зборуваат колку нашите очи
-                            се важни во поимање на светот.
-                            <img class="right-arrow-paragraph" src="/static/icons/right-arrow-bold.svg" />
 
-                        </p>
-                        <p class="text-success" style=" font-weight: 300;font-size: 0.8rem;">
-                            Категорија Здравје <span class="text-dark" style=" font-weight: 300; ">19.11.2019</span>
-                        </p>
+    <div class="container-category-cover with-white-bg__bottom2">
+        <div class="text-cat-container">
+            <h1>Совети за Вашето здравје</h1>
+            <div>
+                <input placeholder="Изберете категорија" class="category-search">
+                <span><img src="../static/icons/right-arrow-copy.svg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-icons-apply">
+        <div class="cont">
+            <div class="icons-cards">
+                <div>
+                    <img class="kit-medicine" src="../static/icons/first-aid-kit.svg">
+                </div>
+                <span class="helthy">ЗДРАВЈЕ</span>
+            </div>
+            <div class="mail-box-right">
+                <img src="../static/icons/message-icon.svg">
+            </div>
+        </div>
+
+    </div>
+    <div class="container-cards">
+        ${require('./inc/card_content_category.html')}
+        ${require('./inc/card_content_category.html')}
+        ${require('./inc/card_content_category.html')}
+    </div>
+    <div class="health-and-category">
+        <div class="row health-problem">
+            <div class="health-container">
+                <div>
+                    <hr class="hr-line">
+                    <h4 class="text-success-header">ПСОРИЈАЗА</h4>
+                    <p class="text-info inline-cards">Иако гингивитисот, или воспаление на непцата, не претставува
+                        голем проблем
+                        на почеток, ова пореметување, ако не се лекува на време, може да доведе до сериозни
+                        здравствени
+                        потешкотии
+                        <img class="right-arrow-paragraph" src="/static/icons/back-back.svg" />
+                    </p>
+                    <p class="text-success">
+                        Категорија Здравје <span class="text-dark">19.11.2019</span>
+                    </p>
+                </div>
+            </div>
+            <div class="health-container">
+                <div>
+                    <hr class="hr-line">
+                    <h4 class="text-success-header">МАНИ ВО ВИДОТ </h4>
+                    <p class="text-info inline-cards">
+                        Секојдневно сме сведоци како различно реагираме на она што го гледаме -- смеење до солзи и
+                        очите се оглседало на душата, се изрази кои зборуваат колку нашите очи
+                        се важни во поимање на светот.
+                        <img class="right-arrow-paragraph"src="/static/icons/back-back.svg" />
+
+                    </p>
+                    <p class="text-success">
+                        Категорија Здравје <span class="text-dark">19.11.2019</span>
+                    </p>
+                </div>
+            </div>
+            <div class="health-container">
+                <div>
+                    <hr class="hr-line">
+                    <h4 class="text-success-header">МАНИ ВО ВИДОТ </h4>
+                    <p class="text-info inline-cards">
+                        Секојдневно сме сведоци како различно реагираме на она што го гледаме -- смеење до солзи и
+                        очите се оглседало на душата, се изрази кои зборуваат колку нашите очи
+                        се важни во поимање на светот.
+                        <img class="right-arrow-paragraph"src="/static/icons/back-back.svg"/>
+                    </p>
+                    <p class="text-success">
+                        Категорија Здравје <span class="text-dark">
+                            19.11.2019</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="health-info">
+                <h4>КАТЕГОРИИ</h4>
+                <h5>ЗДРАВЈЕ</h5>
+                <h5>ИСХРАНА</h5>
+                <h5>НЕГА И УБАВИНА</h5>
+                <h5>МОДА</h5>
+                <h5>СПОРТ</h5>
+                <h5>ОСТАНОТО</h5>
+            </div>
+    </div>
+    <br><br>
+    <div class="small-card_wrapper">
+        <div class="small-card small-card__diet">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="img img-rounded img-invert mw-100px">
+                        <img src="/static/icons/division.svg" alt="" />
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-9">
-                    <div>
-                        <hr class="hr-line">
-                        <h4 class="text-success" style="margin-top: 3rem;">МАНИ ВО ВИДОТ </h4>
-                        <p class="text-info inline-cards">
-                            Секојдневно сме сведоци како различно реагираме на она што го гледаме -- смеење до солзи и
-                            очите се оглседало на душата, се изрази кои зборуваат колку нашите очи
-                            се важни во поимање на светот.
-                            <img class="right-arrow-paragraph" src="/static/icons/right-arrow-bold.svg" />
-                        </p>
-                        <p class="text-success" style=" font-weight: 300;font-size: 0.8rem;">
-                            Категорија Здравје <span class="text-dark" style=" font-weight: 300; ">
-                                19.11.2019</span>
-                        </p>
-                    </div>
+                <div class="col-md-8 d-flex flex-column justify-content-between h-100">
+                    <h3 class="text-white text-transform-uppercase">
+                        ДИЕТАЛЕН КАЛКУЛАТОР
+                    </h3>
+                    <p class="text-white">
+                        Со помош на долниот калкулатор можете на брз и едноставен
+                        начин да ги испланирате вашите дневни оброци
+                    </p>
+                    <a href="#" class="text-white">Дознај повеќе >></a>
                 </div>
             </div>
         </div>
-        <br><br>
-        <div class="small-card_wrapper">
-            <div class="small-card small-card__diet">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="img img-rounded img-invert mw-100px">
-                            <img src="/static/icons/division.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-md-8 d-flex flex-column justify-content-between h-100">
-                        <h3 class="text-white text-transform-uppercase">
-                            ДИЕТАЛЕН КАЛКУЛАТОР
-                        </h3>
-                        <p class="text-white">
-                            Со помош на долниот калкулатор можете на брз и едноставен
-                            начин да ги испланирате вашите дневни оброци
-                        </p>
-                        <a href="#" class="text-white">Дознај повеќе >></a>
+        <div class="small-card  small-card__horoscope">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="img img-rounded img-invert mw-100px">
+                        <img src="/static/icons/aquarius_border.svg" alt="" />
                     </div>
                 </div>
-            </div>
-            <div class="small-card  small-card__horoscope">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="img img-rounded img-invert mw-100px">
-                            <img src="/static/icons/aquarius_border.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-md-8 d-flex flex-column justify-content-between h-100">
-                        <h3 class="text-white text-transform-uppercase">
-                            МЕСЕЧЕН ХОРОСКОП
-                        </h3>
-                        <p class="text-white">
-                            Со помош на долниот калкулатор можете на брз и едноставен
-                            начин да ги испланирате вашите дневни оброци
-                        </p>
-                        <a href="#" class="text-white">Дознај повеќе >></a>
-                    </div>
+                <div class="col-md-8 d-flex flex-column justify-content-between h-100">
+                    <h3 class="text-white text-transform-uppercase">
+                        МЕСЕЧЕН ХОРОСКОП
+                    </h3>
+                    <p class="text-white">
+                        Со помош на долниот калкулатор можете на брз и едноставен
+                        начин да ги испланирате вашите дневни оброци
+                    </p>
+                    <a href="#" class="text-white">Дознај повеќе >></a>
                 </div>
             </div>
         </div>
-        ${require("./inc/footer.html")}
+    </div>
+    ${require("./inc/footer2.html")}
     </div>
 </body>
 
