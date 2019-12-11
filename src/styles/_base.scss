@@ -518,6 +518,7 @@ body {
         }
       }
       & div:last-child{
+        justify-content: center !important;
         max-width: inherit;
       }
     }
